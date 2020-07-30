@@ -1,0 +1,603 @@
+@import "variable";
+@import "responsive";
+
+nav {
+  a {
+    img {
+      width: 360px;
+      height: 70px;
+    }
+  }
+}
+
+.container {
+  .navbar-nav {
+    .nav-item {
+      font: normal bold 14px/19px Open Sans;
+      margin: auto 5px;
+      @include text-shadow(0.3px);
+    }
+
+    .nav-item:hover {
+      background-color: $button_color;
+      border-radius: 15px;
+      color: white !important;
+    }
+  }
+}
+
+.hapo-wrap-slide {
+  position: relative;
+
+  .hapo-slide-desc {
+    width: 1200px;
+    margin: auto;
+
+    .hapo-slide-desc-slogan {
+      font: 50px/61px UTM;
+      letter-spacing: -0.05em;
+      color: #11114e;
+      margin: 0 0 15px 0;
+    }
+  }
+}
+
+.hapo-wrap-slide {
+  .background-banner {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-fluid {
+    position: absolute;
+    top: calc(50% - 145.5px);
+  }
+}
+
+.hapo-slide-desc-slogan {
+  b {
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+}
+
+.hapo-slide-desc-slogan-det {
+  display: block;
+  width: 249px;
+  height: 50px;
+  font: 20px/25px UTM;
+  letter-spacing: -0.05em;
+  color: #505353;
+}
+
+.btn-banner-cus {
+  margin-top: 30px;
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  color: #ffffff;
+  font: normal bold 30px/70px UTM;
+  background-color: $button_color;
+  @include text_shadow(1px);
+  &:hover {
+    transform: scale(1.1);
+    @extend .fix_hover;
+  }
+}
+
+.hapo-wrap-space {
+  width: 100%;
+  height: 161px;
+  background-image: linear-gradient(0deg, rgb(182, 178, 178), #ffffff);
+}
+
+.row-one {
+  position: relative;
+  top: -104px;
+
+  .course-one {
+    img {
+      @include cover_image(#3f6185);
+    }
+  }
+
+  .course-two {
+    img {
+      @include cover_image(#dc594c);
+    }
+  }
+
+  .course-three {
+    img {
+      @include cover_image(#556598);
+    }
+  }
+}
+
+.row-four {
+  .course-one {
+    img {
+      @include cover_image(#24abe2);
+      min-height: 209px;
+    }
+  }
+
+  .course-two {
+    img {
+      @include cover_image(#e14e40);
+      min-height: 209px;
+    }
+  }
+
+  .course-three {
+    img {
+      @include cover_image(#1b75bb);
+      max-height: 209px;
+    }
+  }
+}
+
+.container {
+  .card {
+    background-color: transparent;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px 15px 15px;
+
+    .card-text {
+      font: normal bold 14px/20px UTM;
+    }
+  }
+}
+
+.container {
+  .card {
+    .card-title {
+      font: normal bold 30px/37px UTM;
+      color: #b2d235;
+      @include text-shadow(1px);
+    }
+
+    .card-body {
+      padding-bottom: 45px;
+    }
+
+    .btn-cus {
+      box-shadow: inset 0px 1.5px 2px #6f8710;
+      border-radius: 22px;
+      letter-spacing: 0.06rem;
+      background-color: $button_color;
+      @include text-shadow(1px);
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.heading-main {
+  margin: auto;
+  color: #11114e;
+  font: normal bold 75px/98px UTM;
+}
+
+.hapo-wrap-courses-row {
+  width: 85%;
+  position: relative;
+  top: -104px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  .text-fix {
+    @extend .heading-main;
+  }
+}
+
+.hapo-row-two {
+  width: 480px;
+  height: 100px;
+  margin: 110px auto auto auto;
+  border-bottom: 5px solid $button_color;
+  margin-bottom: 66px;
+}
+
+.hapo-row-four {
+  margin-top: 60px;
+  color: $button_color;
+  letter-spacing: -0.02em;
+
+  .hapo-all-course {
+    font: bold 40px/49px UTM;
+    color: #90ab26;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .hapo-other-courses:hover {
+    transform: scale(1.05);
+  }
+}
+
+.hapo-wrap-inf {
+  background: url("../image/background_inf.png");
+  background-size: cover;
+  position: relative;
+
+  .hapo-inf_one {
+    position: absolute;
+    top: -222px;
+  }
+
+  .hapo-inf_two {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .hapo-content-heading {
+    color: white;
+    font: normal bold 70px/86px UTM;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 180px 0;
+  }
+
+  li {
+    margin: 10px 0 10px 30px;
+    color: white;
+    font: 20px/25px UTM;
+  }
+}
+
+.hapo-wrap-feedback {
+  padding-top: 104px;
+
+  .hapo-wrap-feedback-heading {
+    .hapo-feedback-heading {
+      width: 350px;
+      border-bottom: 5px solid $button_color;
+      text-align: center;
+      @extend .heading-main;
+    }
+  }
+
+  .hapo-feedback-det {
+    text-align: center;
+    font: 25px/31px UTM;
+    color: #505353;
+    margin: 23px auto 40px auto;
+    text-shadow: 0.1px 0.1px 0.01px;
+  }
+}
+
+/* feedback */
+
+.hapo-wrap-feedback-users {
+  height: 200px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+
+  .hapo-feedback-user {
+    .hapo-wrap-feedback-content {
+      height: 163.47px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      text-align: center;
+      border: 0.5px solid #e2e2e2;
+      box-sizing: border-box;
+      border-radius: 10px;
+      position: relative;
+      padding: 0 15px;
+    }
+
+    .hapo-feedback-user-content {
+      width: 92%;
+      height: 89px;
+      font: 16px/20px UTM;
+      letter-spacing: -0.05em;
+      border-left: 7px solid #d9dadc;
+      padding: 10px;
+      @include text-shadow(0.3px);
+    }
+  }
+}
+
+.hapo-feedback-user {
+  .hapo-message {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    .hapo-user-inf {
+      margin-left: 10px;
+
+      .hapo-userN,
+      .hapo-coursesN,
+      .hapo-like {
+        text-shadow: 0.1px 0.1px;
+        display: flex;
+        align-items: center;
+        margin: 3px auto;
+      }
+
+      .hapo-userN {
+        color: #11114e;
+      }
+
+      .hapo-coursesN {
+        color: #505353;
+      }
+    }
+  }
+
+  .tooltip-cus {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: #ffffff;
+    border-top: 0.5px solid #e2e2e2;
+    border-left: 0.5px solid #e2e2e2;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    bottom: -9px;
+    left: 19px;
+  }
+}
+
+.hapo-wrap-feedback-users {
+  position: relative;
+}
+
+.hapo-wrap-slider {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  visibility: hidden;
+  animation-duration: 2s;
+  margin: auto 0;
+  left: 0;
+}
+
+.hapo-left-right {
+  position: absolute;
+  margin-top: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .left_icon,
+  .right_icon {
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.hapo-wrap-learn {
+  padding: 10% 0;
+  margin-top: 110px;
+  background: url(../image/background7.png) no-repeat center;
+  background-size: cover;
+
+  .hapo-content-learn {
+    width: 705px;
+    margin: auto;
+
+    .hapo-learn-heading {
+      width: 705px;
+      height: 158px;
+      font: normal bold 60px/74px UTM;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+  }
+}
+
+.hapo-content-learn {
+  .hapo-button-learn {
+    .hapo-learn-link {
+      margin: 15px auto auto auto;
+      background-color: #ffffff;
+      color: $button_color;
+      font: normal bold 30px/70px UTM;
+      letter-spacing: -0.05em;
+    }
+  }
+}
+
+.hapo-wrap-statistic {
+  padding: 110px 0;
+
+  .hapo-feedback-heading {
+    border-bottom: 5px solid $button_color;
+    margin-bottom: 45px;
+    width: 300px;
+    @extend .heading-main;
+  }
+}
+
+.hapo-static-data {
+  display: flex;
+  justify-content: center;
+  padding: 0 80px;
+
+  .hapo-statistic-name {
+    color: #505353;
+  }
+
+  .hapo-statistic-name,
+  .hapo-statistic-data {
+    text-align: center;
+    font: normal bold 60px/74px main-font;
+    letter-spacing: -0.05em;
+  }
+
+  .hapo-statistic-data {
+    margin: 7% auto 15% auto;
+    color: #b2d235;
+  }
+}
+
+.container-wrap {
+  background-color: #505353;
+  padding: 60px 0;
+
+  .hapo-logo-footer {
+    .footer-det {
+      color: white;
+      font: 20px/25px UTM;
+    }
+  }
+
+  .hapo-footer-wrap-list {
+    .hapo-footer-list-page {
+      margin: 0 10px;
+    }
+
+    .hapo-list-item {
+      margin: 20px auto;
+      font: bold 20px/25px UTM;
+    }
+  }
+
+  .hapo-list-item {
+    a {
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.hapo-wrap-contact {
+  .hapo-face-link {
+    margin: auto 15px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.wrap-copy {
+  background-color: #454545;
+
+  .container {
+    color: white;
+    padding: 10px 0;
+    font: 15px/18px UTM;
+  }
+}
+
+.text-mes {
+  font: normal 600 12px/16px Open Sans;
+  letter-spacing: -0.02em;
+  color: #7f7f7f;
+}
+
+.hapo-fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+
+  .hapo-wrap-content-mes {
+    width: 100%;
+    height: 100%;
+    padding: 10px 5px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    display: none;
+
+    .hapo-button-message {
+      margin-top: 25px;
+    }
+
+    .hapo-user {
+      padding: 2px 6px 0 60px;
+      @extend .text-mes;
+    }
+
+    .det-message {
+      padding: 5px 22px;
+      @extend .text-mes;
+    }
+  }
+}
+
+.hapo-close {
+  margin-left: 200px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.hapo-wrap-message-content {
+  padding-left: 10px;
+
+  .hapo-user-image {
+    height: 30px;
+  }
+
+  .hapo-message-content {
+    width: 256px;
+    margin-left: 10px;
+    padding: 10px 5px 10px 5px;
+    background: #f1f0f0;
+    border-radius: 15px;
+    font: bold 12px/17px Open Sans;
+    letter-spacing: -0.02em;
+    color: #505353;
+  }
+}
+.hapo-button-message {
+  .hapo-button-message-link {
+    width: 276px;
+    height: 37px;
+    line-height: 37px;
+    margin: auto;
+    font: 12px/16px Open Sans;
+    color: white;
+    background: #3184f7;
+    border-radius: 10px;
+    color: #ffffff;
+    &:hover {
+      opacity: 0.8;
+      text-decoration: none;
+    }
+  }
+}
+
+.hapo-button-message-link {
+  img {
+    margin-right: 10px;
+  }
+}
+
+.hapo-wrap-icon {
+  cursor: pointer;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  bottom: -66px;
+  margin-top: 5px;
+  background-color: #2774df;
+  border-radius: 50%;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    margin-top: 1px;
+  }
+}
